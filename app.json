@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mind/mind"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#C0C0C0",
+    "navigationBarTitleText": "妙妙屋",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#808080"
+  },
+
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#969696",
+    "selectedColor": "#000000",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "留言板",
+      "iconPath": "icons/liuyanban01.png",
+      "selectedIconPath": "icons/liuyanban02.png"
+    },
+    {
+      "pagePath": "pages/mind/mind",
+      "text": "我",
+      "iconPath": "icons/wode01.png",
+      "selectedIconPath": "icons/wode02.png"
+    }
+  ]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

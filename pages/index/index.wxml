@@ -1,0 +1,20 @@
+<view>
+  <view>
+    <textarea class="message" placeholder="要留便签吗" bindinput="Message" ></textarea>
+  </view>
+  <button 
+  class="create_messageBtn" bindtap="addMessage" size="mini" >贴上便签</button>
+</view>
+<block wx:for="{{m_logs}}" wx:key="key" >
+  <view class="userinfo" >
+    <view class="imgAndname_view" >
+      <image class="userinfo_avatar" src="{{item.pic}}" ></image>
+      <text class="name" >{{item.name}}：</text>
+    </view>
+    <!-- <text class="name" >{{item.name}}：</text> -->
+    <text class="t_message" >{{item.message}}</text>
+    <text class="time" >{{item.date}}</text>
+  </view>
+  <!-- <text class="t_message" >{{item.message}}</text>
+  <text class="time" >{{item.date}}</text> -->
+</block>
