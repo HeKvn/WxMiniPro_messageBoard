@@ -8,3 +8,8 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+page{
+  /* 定义主题颜色 */
+  --themeColor:#B22222;
+}

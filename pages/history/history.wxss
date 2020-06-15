@@ -1,0 +1,31 @@
+.history_detail{
+  border-bottom: 1rpx  solid #ccc;
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+}
+
+.Userinfo{
+  display: flex;
+}
+
+.avatar image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15rpx;
+}
+
+.text{
+  font-size: 40rpx;
+}
+
+.date{
+  font-size: 25rpx;
+  color: #FA8072;
+}

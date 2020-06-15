@@ -7,7 +7,7 @@ Page({
 
   onLoad: function (options) {
     // 从缓存获取用户信息
-    const ui = wx.getSystemInfoSync('userinfo')
+    const ui = wx.getStorageSync('userinfo');
     this.setData({
       userinfo:ui,
       openid:ui.openid
@@ -27,13 +27,14 @@ Page({
           userinfo:e.detail.userInfo
         })
         _this.data.userinfo.openid=_this.data.openid
-        console.log(_this.data.userinfo)
-        wx.setStorageSync('userinfo', _this.data.userinfo)
+        // console.log(res)
+        // console.log(_this.data.userinfo)
+        wx.setStorageSync('userinfo', _this.data.userinfo);
       },
       fail:res=>{
-        console.log("fail")
+        console.log("fail");
       }
     })
-  }
+  },
 
 })

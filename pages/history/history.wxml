@@ -1,0 +1,12 @@
+<block wx:for="{{history}}" wx:key="_id" >
+  <view class="history_detail" >
+    <view class="Userinfo" >
+      <view class="avatar" >
+        <image src="{{item.pic}}" ></image>
+      </view>
+      <view class="nickName" >{{item.name}} :</view>
+    </view>
+    <view class="text" >{{item.message}}</view>
+    <view class="date" >{{item.date}}</view>
+  </view>
+</block>

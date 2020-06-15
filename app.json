@@ -1,14 +1,16 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/mind/mind"
+    "pages/mind/mind",
+    "pages/reply/reply",
+    "pages/history/history",
+    "pages/money/money"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#C0C0C0",
+    "navigationBarBackgroundColor": "#B22222",
     "navigationBarTitleText": "妙妙屋",
-    "navigationBarTextStyle":"white",
-    "backgroundColor": "#808080"
+    "navigationBarTextStyle":"white"
   },
 
   "tabBar": {
@@ -21,6 +23,18 @@
       "text": "留言板",
       "iconPath": "icons/liuyanban01.png",
       "selectedIconPath": "icons/liuyanban02.png"
+    },
+    {
+      "pagePath": "pages/history/history",
+      "text": "历史",
+      "iconPath": "icons/lajixiang01.png",
+      "selectedIconPath": "icons/lajixiang02.png"
+    },
+    {
+      "pagePath": "pages/money/money",
+      "text": "资金",
+      "iconPath": "icons/zijin01.png",
+      "selectedIconPath": "icons/zijin02.png"
     },
     {
       "pagePath": "pages/mind/mind",

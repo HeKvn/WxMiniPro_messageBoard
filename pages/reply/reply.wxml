@@ -1,0 +1,27 @@
+<view class="log" wx:for="{{log}}" wx:key="_id" >
+  <view class="userinfo" >
+    <view class="img" >
+      <image src="{{item.pic}}" ></image>
+    </view>
+    <view class="name" >{{item.name}} :</view>
+  </view>
+  <view class="message" >{{item.message}}</view>
+  <view class="time" >{{item.date}}</view>
+</view>
+
+<block wx:for="{{reply}}" wx:key="_id" >
+  <view class="reply_detail" >
+    <view class="replyUserinfo" >
+      <view class="avatar" >
+        <image src="{{item.pic}}" ></image>
+      </view>
+      <view class="nickName" >{{item.name}} :</view>
+    </view>
+    <view class="text" >{{item.message}}</view>
+    <view class="date" >{{item.date}}</view>
+  </view>
+</block>
+
+<view class="input" >
+  <input confirm-type="send" placeholder=" ...回复" bindconfirm="send" value="{{reply_value}}" ></input>
+</view>

@@ -1,6 +1,6 @@
 <view>
   <view>
-    <textarea class="message" placeholder="要留便签吗" bindinput="Message" ></textarea>
+    <textarea class="message" placeholder="要留便签吗" bindinput="Message" value="{{t_value}}" ></textarea>
   </view>
   <button 
   class="create_messageBtn" bindtap="addMessage" size="mini" >贴上便签</button>
@@ -11,10 +11,13 @@
       <image class="userinfo_avatar" src="{{item.pic}}" ></image>
       <text class="name" >{{item.name}}：</text>
     </view>
-    <!-- <text class="name" >{{item.name}}：</text> -->
-    <text class="t_message" >{{item.message}}</text>
-    <text class="time" >{{item.date}}</text>
+    <view class="t_message" >
+      <text>{{item.message}}</text>
+    </view>
+    <!-- <text class="t_message" >{{item.message}}</text> -->
+    <view class="time_reply" >
+      <text class="time" >{{item.date}}</text>
+      <navigator class="reply" url="/pages/reply/reply?message_id={{item._id}}" >回复</navigator>
+    </view>
   </view>
-  <!-- <text class="t_message" >{{item.message}}</text>
-  <text class="time" >{{item.date}}</text> -->
 </block>
