@@ -1,0 +1,48 @@
+.input{
+  display: flex;
+  padding: 30rpx;
+  /* height: 80rpx; */
+}
+
+radio-group{
+  padding:0 10rpx;
+}
+
+radio{
+  padding: 20rpx;
+}
+
+input{
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+}
+
+.text{
+  display: flex;
+  padding-left: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.text label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea{
+  width: 70%;
+  height: 120rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+}
+
+.Subbtn{
+  background-color: var(--themeColor);
+  color: white;
+}
+
+.Subbtn:active{
+  background-color: #000000; 
+  color: white;
+  opacity: 0.5;
+}

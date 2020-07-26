@@ -1,0 +1,293 @@
+page{
+  padding-bottom: 55rpx;
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: 30rpx;
+  color: #bbbbbb;
+}
+.item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 90rpx;
+}
+.item.active{
+  /* 在微信小程序中其实不写.item也可以的，但是为了防止之后还会有.active，这样做个区分 */
+  color: var(--themeColor);
+}
+
+.item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rpx;
+  background: var(--themeColor);
+}
+
+.isRuleShow{
+  display: block;
+}
+
+.isRuleHide{
+  display: none;
+}
+
+.float {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* 背景虚化 */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2;
+  top: 0;
+  left: 0;
+  /* margin-top:80rpx; */
+}
+
+.animation-element {
+  width: 580rpx;
+  height: 1175rpx;
+   background-color: #ffffff; 
+  border: 1px solid #f3f0f0;
+  position: absolute;
+  right: -572rpx;
+}
+
+.use{
+  padding: 20rpx;
+}
+
+.type_name{
+  color: var(--themeColor);
+  margin: 20rpx 0;
+}
+
+.time_name{
+  color: var(--themeColor);
+  margin: 20rpx 0;
+}
+
+.money_name{
+  color: var(--themeColor);
+  margin: 20rpx 0; 
+}
+
+radio{
+  padding: 20rpx;
+}
+
+.time_input{
+  display: flex;
+  text-align: center;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.time_input input{
+  border: 1rpx solid #ccc;
+  width: 45%;
+  border-radius: 15rpx;
+  margin: 20rpx 15rpx;
+}
+
+.sucbtn{
+  background-color: var(--themeColor);
+  color: white;
+}
+
+.sucbtn:active{
+  background-color: #000000; 
+  color: white;
+  opacity: 0.5;
+}
+
+.footer_tool{
+  /* 用fixed可以实现不随滑动而滑动 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+
+.total_price{
+  display: flex;
+  flex: 6;
+  padding-left: 15rpx;
+  text-align: right;
+}
+
+.total_priceText{
+  color: var(--themeColor);
+  /* font-size: 34rpx; */
+  font-weight: 600;
+}
+
+.screening{
+  display: flex;
+  flex: 1;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.screening text{
+  padding-left: 5rpx;
+}
+
+.INFO{
+  border: 1rpx solid #ccc;
+  margin: 10rpx 15rpx;
+  border-radius: 15rpx;
+  padding: 20rpx;
+}
+
+.MoneyTime_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.money{
+  flex: 2;
+  font-size: 60rpx;
+  color: var(--themeColor);
+}
+
+.time{
+  flex: 2;
+  justify-content: right;
+  font-size: 30rpx;
+}
+
+.payinfo text{
+  font-size: 35rpx;
+  color: #999999;
+}
+
+.payobj{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.paytype{
+  display: flex;
+  align-items: center;
+}
+.payps{
+  display: flex;
+  align-items: center;
+}
+.payname{
+  display: flex;
+  align-items: center;
+}
+
+.saveMoney{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 25rpx;
+}
+
+.saveMoney text{
+  font-size: 30rpx;
+  color: #999999;
+}
+
+.saveMoney view{
+  font-size: 70rpx;
+  color: var(--themeColor);
+}
+
+.contain{
+  display: flex;
+  height: 550rpx;
+}
+
+.contain_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rpx 63rpx;
+  /* position: absolute; */
+  position: relative;
+}
+
+.contain_item text{
+  position: absolute;
+  bottom: 0;
+}
+
+.wei{
+  background-color: antiquewhite;
+  width: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+}
+.liang{
+  background-color: aqua;
+  width: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+}
+.qi{
+  background-color: blue;
+  width: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+}
+.kun{
+  background-color: burlywood;
+  width: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+}
+.di{
+  background-color: crimson;
+  width: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+}
+.hong{
+  background-color: darkgoldenrod;
+  width: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+}
+
+.contribution{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15rpx 0;
+  color: #999999;
+  font-size: 30rpx;
+}
+
+.input_output{
+  display: flex;
+  margin: 90rpx 15rpx;
+}
+
+.input_output button{
+  background-color: var(--themeColor); 
+  color: white;
+}
+
+.input_output button:active{
+  background-color: #000000; 
+  color: white;
+  opacity: 0.5;
+}
