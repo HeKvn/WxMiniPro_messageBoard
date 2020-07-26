@@ -36,6 +36,7 @@ text{
   height: auto;
   background: #fff;
   border:1px solid #ccc;
+  border-radius: 10rpx;
   /* transition: all 300ms ease; */
 }
 

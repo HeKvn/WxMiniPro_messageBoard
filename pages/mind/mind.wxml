@@ -1,9 +1,10 @@
-<view class="container" >
+<button wx:if="{{!openid}}" open-type="getUserInfo" bindgetuserinfo="login" >授权登录</button>
+<view wx:elif="{{openid}}" class="container" >
   <view class="userinfo" >
-    <view>
+    <view bindtap="openSetting">
       <image class="userinfo_avatar" src="{{userinfo.avatarUrl}}" ></image>
     </view>
     <text>{{userinfo.nickName}}</text>
   </view>
+  <text class="openSetting">点击头像查看权限设置</text>
 </view>
-<button wx:if="{{!openid}}" open-type="getUserInfo" bindgetuserinfo="login" >授权登录</button>

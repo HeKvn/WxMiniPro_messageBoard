@@ -1,4 +1,3 @@
-
 Page({
   data: {
     userinfo:{},
@@ -36,5 +35,11 @@ Page({
       }
     })
   },
+
+  openSetting:function(){
+    wx.openSetting({
+      complete: (res) => {},
+    })
+  }
 
 })

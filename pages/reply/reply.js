@@ -33,6 +33,7 @@ Page({
     this.getReply();
   },
 
+  //获取每条留言下的回复
   getReply:function(){
     const _this = this;
     wx.cloud.callFunction({
@@ -51,6 +52,7 @@ Page({
     })
   },
 
+  //发送回复
   send:function(e){
     const _this = this;
     const ui = wx.getStorageSync('userinfo')

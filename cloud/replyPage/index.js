@@ -1,4 +1,5 @@
 // 云函数入口文件
+//获取回复页面的  被  回复信息
 const cloud = require('wx-server-sdk')
 
 cloud.init()

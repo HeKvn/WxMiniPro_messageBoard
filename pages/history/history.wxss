@@ -1,11 +1,18 @@
 .history_detail{
-  border-bottom: 1rpx  solid #ccc;
-  padding-top: 15rpx;
-  padding-left: 15rpx;
+  margin: 25rpx auto;
+  width: 98%;
+  height: auto;
+  background: #fff;
+  border:1px solid #ccc;
+  border-radius: 10rpx;
 }
 
 .Userinfo{
   display: flex;
+}
+
+.avatar{
+  margin: 10rpx 10rpx;
 }
 
 .avatar image{
@@ -23,9 +30,35 @@
 
 .text{
   font-size: 40rpx;
+  margin: 0 10rpx;
+}
+
+.time_reply{
+  display: flex;
+}
+
+.reply{
+  color: #ff751A;
+  font-size: 30rpx;
 }
 
 .date{
+  width: 85%;
   font-size: 25rpx;
-  color: #FA8072;
+  color: #5151A2;
+  margin-left: 10rpx;
+}
+
+.footer{
+  display: flex;
+}
+
+.edit{
+  width: 30%;
+  height: 20%;
+  color: white;
+  background-color: var(--themeColor);
+  /* border: 1rpx solid var(--themeColor); */
+  text-align: center;
+  margin: 15rpx 70rpx;
 }

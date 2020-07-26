@@ -1,10 +1,12 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/scenario/scenario",
     "pages/mind/mind",
     "pages/reply/reply",
     "pages/history/history",
-    "pages/money/money"
+    "pages/money/money",
+    "pages/WriteMoney/WriteMoney"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -25,10 +27,10 @@
       "selectedIconPath": "icons/liuyanban02.png"
     },
     {
-      "pagePath": "pages/history/history",
-      "text": "历史",
-      "iconPath": "icons/lajixiang01.png",
-      "selectedIconPath": "icons/lajixiang02.png"
+      "pagePath": "pages/scenario/scenario",
+      "text": "场景",
+      "iconPath": "icons/changjing01.png",
+      "selectedIconPath": "icons/changjing02.png"
     },
     {
       "pagePath": "pages/money/money",

@@ -51,7 +51,7 @@ page{
   background-color: white;
   width: 90%;
   height: 80rpx;
-  border-radius: 30rpx;
+  border-radius: 20rpx;
   margin: auto;
 }
 

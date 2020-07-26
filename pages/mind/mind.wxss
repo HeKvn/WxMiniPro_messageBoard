@@ -19,3 +19,11 @@ image{
   border: 2px solid #fff;
   box-shadow: 3px 3px 10px #80FFFF;
 }
+
+.openSetting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+}

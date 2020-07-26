@@ -1,4 +1,4 @@
-<block wx:for="{{history}}" wx:key="_id" >
+<block wx:for="{{historyShow}}" wx:key="_id" >
   <view class="history_detail" >
     <view class="Userinfo" >
       <view class="avatar" >
@@ -7,6 +7,15 @@
       <view class="nickName" >{{item.name}} :</view>
     </view>
     <view class="text" >{{item.message}}</view>
-    <view class="date" >{{item.date}}</view>
+    <view class="time_reply" >
+      <view class="date" >{{item.date}}</view>
+      <navigator class="reply" url="/pages/reply/reply?message_id={{item._id}}" >回复</navigator>
+    </view>
   </view>
 </block>
+
+<view class="footer" >
+  <view class="edit" bindtap="historyPage" data-operation="{{-1}}" >上一页</view>
+  <view class="edit" bindtap="historyPage" data-operation="{{1}}" >下一页</view>
+</view>
+
