@@ -8,3 +8,5 @@
   </view>
   <text class="openSetting">点击头像查看权限设置</text>
 </view>
+
+<!-- 绑定了bindgetuserinfo的按钮，用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致，open-type="getUserInfo"时有效 -->
